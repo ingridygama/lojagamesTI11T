@@ -2,7 +2,7 @@
 include_once ("header.php");
 ?>
 
-<img src="img/gamesonline.gif" width=100% style="padding-top:7px">
+<img src="img/gamers (1).gif" width=100% style="padding-top:7px">
 
 
 <?php

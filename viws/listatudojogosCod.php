@@ -11,7 +11,10 @@ include_once("../models/bancoJogos.php");
       <input type="number" required name="codJog" class="form-control" id="inputCodigo">
     </div>
     <div class="col-sm-3">
-    <button type="submit" class="btn btn-primary">Buscar</button>
+    <button type="submit" class="btn btn-success">Buscar</button>
+    <br>
+    <br>
+    <br>
   </div>
 
 </form>
@@ -24,6 +27,8 @@ include_once("../models/bancoJogos.php");
       <th scope="col">Jogo</th>
       <th scope="col">Console</th>
       <th scope="col">Preço</th>
+      <th scope="col">Deletar JOGO</th>
+      <th scope="col">Alterar JOGO
     </tr>
   </thead>
   <tbody>
@@ -41,6 +46,18 @@ $jogos = listatudojogosCod($conexao,$codJogo);
       <td><?=$jogos['nomeJog']?></td>
       <td><?=$jogos['consoleJog']?></td>
       <td><?=$jogos['precoJog']?></td>
+<td>
+      <form action="../controllers/deletarjogos.php" method="Post">
+      <input type="hidden" name= "codJogdeletar" value="<?=$jogo['codJog']?>">
+       <button type="submit" class="btn btn-danger">Deletar</button>
+      </form>
+      </td>
+      <td>
+      <form action="formAlterar.php" method="Post">
+      <input type="hidden" name= "codJogAlterar" value="<?=$jogo['codJog']?>">
+       <button type="submit" class="btn btn-success">Alterar</button>
+      </form>
+      </td>
     </tr>
 <?php
 }

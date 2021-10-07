@@ -6,6 +6,9 @@
 <style>
 .card-title{
    text-align: center;
+   font-size: 100;
+   font-style: arial;
+   color: seagreen;
 }
 .tudo{
   background:seagreen;
@@ -16,7 +19,9 @@
 <div class="tudo">
 <div class="card w-75">
   <div class="card-body">
-    <h5 class="card-title"><b>Inserir Jogo</h5>
+    <br>
+    <h5 class="card-title"><b>INSERIR JOGO</h5>
+    <br>
     <div class="card w-75 p-4">
     <p class="card-center">
     <p>Jogo <input type="text" name="jogo"></p>
@@ -29,6 +34,8 @@
    <button type="submit" class="btn btn-success">Salvar</button>
 </div>
 </div>
+<br>
+<br>
 </form>
 
 <?php
