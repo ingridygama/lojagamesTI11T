@@ -12,7 +12,7 @@
  
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
 <div class="container-fluid">
-<a class="navbar-brand" href="#">Jogos On-line </a>
+<a class="navbar-brand" href="/projeto/lojagamesTI11T/viws/">Jogos On-line </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -35,10 +35,10 @@
            Jogos   
  </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="cadastroJogos.php">Cadastro</a></li>
-            <li><a class="dropdown-item" href="listatudojogos.php">Visualizar Tudo</a></li>
+            <li><a class="dropdown-item" href="../viws/cadastroJogos.php">Cadastro</a></li>
+            <li><a class="dropdown-item" href="../viws/listatudojogos.php">Visualizar Tudo</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Busca por código</a></li>
+            <li><a class="dropdown-item" href="../viws/listatudojogosCod.php">Buscar por código</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
