@@ -13,3 +13,4 @@ echo("Jogo cadastrado com SUCESSO.");
     echo("Jogo não cadastrado.");
 }
 include("../viws/footer.php");
+?>
