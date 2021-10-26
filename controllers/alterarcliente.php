@@ -8,9 +8,9 @@ include("../viws/header.php");
 
 extract($_REQUEST,EXTR_OVERWRITE);
 
-if(alterarUsuarios($conexao,$codUsu,$emailUsu,$senhaUsu,$pinUsu)){
-echo("Usuario alterado com SUCESSO");
+if(alterarcliente($conexao,$codCli,$codigoUsuFk,$nomeCliente, $cpfCliente,$foneCliente,$dataNascCliente)){
+echo("Cliente alterado com SUCESSO");
 }else{
-    echo("Usuário não alterado.");
+    echo("Cliente não alterado.");
 }
 include("../viws/footer.php");

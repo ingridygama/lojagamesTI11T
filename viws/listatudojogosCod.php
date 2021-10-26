@@ -39,7 +39,7 @@ if($codJogo > 0){
 
 
 $jogos = listatudojogosCod($conexao,$codJogo);
-
+if ($jogos){
 ?>
     <tr>
       <td scope="row"><?=$jogos['codJog']?></td>
@@ -60,6 +60,7 @@ $jogos = listatudojogosCod($conexao,$codJogo);
       </td>
     </tr>
 <?php
+}
 }
 ?>
   </tbody>

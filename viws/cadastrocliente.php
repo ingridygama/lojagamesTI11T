@@ -20,14 +20,16 @@
 <div class="card w-75">
   <div class="card-body">
     <br>
-    <h5 class="card-title"><b>CADASTRO</h5>
+    <h5 class="card-title"><b>CADASTRO CLIENTE</h5>
     <br>
-    <form method="POST" action="../controllers/inserirusuarios.php">
+    <form method="POST" action="../controllers/inserircliente.php">
     <div class="card w-75 p-4">
     <p class="card-center">
-    <p>Emal <input type="email" name="emailUsuarios"></p>
-    <p>Senha: <input type= "password" name="senhaUsuarios"></p>
-    <p>PIN <input type= "text" name="pinUsu"></p>
+    <p>Código: <input type="number" name="codigoUsuFk"></p>
+    <p>Nome: <input type= "text" name="nomeCliente"></p>
+    <p>CPF: <input type= "text" name="cpfCliente"></p>
+    <p>Data de nascimento: <input type= "date" name="datanasCliente"></p>
+    <p>Telefone: <input type= "text" name="telCliente"></p>
    <button type="submit" class="btn btn-success">Salvar</button>
 </div>
 </div>

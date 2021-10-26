@@ -1,6 +1,5 @@
 <?php
 
-
 include("../models/conexao.php");
 include("../models/bancousuarios.php");
 include("../viws/header.php");
@@ -8,9 +7,9 @@ include("../viws/header.php");
 
 extract($_REQUEST,EXTR_OVERWRITE);
 
-if(alterarUsuarios($conexao,$codUsu,$emailUsu,$senhaUsu,$pinUsu)){
-echo("Usuario alterado com SUCESSO");
+if(deletarcliente($conexao, $codusuariodeletar)){
+echo("Cliente deletado com SUCESSO.");
 }else{
-    echo("Usuário não alterado.");
+    echo("Cliente não deletado.");
 }
 include("../viws/footer.php");

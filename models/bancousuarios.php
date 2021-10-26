@@ -1,6 +1,9 @@
 <?php
-function cadastrousuario($conexao,$emailUsuarios,$senhaUsuarios){
-    $query="insert into tbusuario(emailUsu,senhaUsu)values('{$emailUsuarios}','{$senhaUsuarios}')";
+function cadastrousuario($conexao,$emailUsuarios,$senhaUsuarios, $pinUsu){
+    $option = ['cost' => 8];
+    $senhacrypto = password_hash($senhaUsuarios, PASSWORD_BCRYPT, $option);
+    $query="insert into tbusuario(emailUsu,senhaUsu,pinUsu)values('{$emailUsuarios}','{$senhacrypto}','{$pinUsu}')";
+    
     $resultados = mysqli_query($conexao,$query);
     return $resultados;
     }
@@ -18,9 +21,10 @@ function deletarusuarios($conexao, $codUsuario){
         return $resultados;
     }
 
-function alterarUsuarios($conexao,$codUsu,$emailUsu,$senhaUsu){
-
-        $query= "update tbusuario set emailUsu= '{$emailUsu}', senhaUsu= '{$senhaUsu}' where codUsu = '{$codUsu}'";
+function alterarUsuarios($conexao,$codUsu,$emailUsu,$senhaUsu,$pinUsu){
+    $option = ['cost' => 8];
+    $senhaUsu = password_hash($senhaUsu, PASSWORD_BCRYPT, $option);
+        $query= "update tbusuario set emailUsu= '{$emailUsu}', senhaUsu= '{$senhaUsu}', pinUsu= '{$pinUsu}' where codUsu = '{$codUsu}'";
         $resultados = mysqli_query ($conexao, $query);
         return $resultados;
         }

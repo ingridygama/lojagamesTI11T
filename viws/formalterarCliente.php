@@ -1,4 +1,3 @@
-
 <?php
   include_once("header.php");
   include_once("../models/conexao.php");
@@ -8,8 +7,8 @@
     <form method="POST" action="../controllers/alterarusuario.php">
 
 <?php
-$codUsuario = $_POST["codusuarioalterar"];
-$usuario = listadeusuariosCod ($conexao,$codUsuario);
+$codCliente = $_POST["codclientealterar"];
+$cliente = listadeclienteCod ($conexao,$codCliente);
 
 ?>
 
@@ -26,7 +25,7 @@ $usuario = listadeusuariosCod ($conexao,$codUsuario);
 <div class="tudo">
 <div class="card w-75">
   <div class="card-body">
-    <h5 class="card-title"><b>Modificar Usuário</h5>
+    <h5 class="card-title"><b>Modificar Cliente</h5>
     <div class="card w-75 p-4">
     <p class="card-center"> 
     <form action="../controllers/alterarusuario.php" method="POST">

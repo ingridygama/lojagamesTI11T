@@ -46,10 +46,10 @@
             Cliente
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">cadastro</a></li>
-            <li><a class="dropdown-item" href="#">Visualizar</a></li>
+            <li><a class="dropdown-item" href="cadastrocliente.php">cadastro</a></li>
+            <li><a class="dropdown-item" href="../viws/listadecliente.php">Visualizar</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Busca por código</a></li>
+            <li><a class="dropdown-item" href="../viws/listadeclienteCod.php">Busca por código</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

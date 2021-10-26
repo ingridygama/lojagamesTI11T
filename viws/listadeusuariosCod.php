@@ -35,10 +35,10 @@ include_once("../models/bancousuarios.php");
 $codUsuario = isset($_GET['codUsu'])?$_GET['codUsu']:0;
 if($codUsuario > 0){
   $usuarios = listadeusuariosCod($conexao,$codUsuario);
-
+ 
 
 $usuario = listadeusuariosCod($conexao,$codUsuario);
-
+if ($usuario){
 ?>
     <tr>
       <th scope="row"><?=$usuario['codUsu']?></th>
@@ -58,6 +58,7 @@ $usuario = listadeusuariosCod($conexao,$codUsuario);
       </td>
     </tr>
 <?php
+}
 }
 ?>
   </tbody>
