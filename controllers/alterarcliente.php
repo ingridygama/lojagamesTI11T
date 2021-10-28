@@ -8,7 +8,7 @@ include("../viws/header.php");
 
 extract($_REQUEST,EXTR_OVERWRITE);
 
-if(alterarcliente($conexao,$codCli,$codigoUsuFk,$nomeCliente, $cpfCliente,$foneCliente,$dataNascCliente)){
+if(alterarcliente($conexao,$codCli,$codigoUsuFk,$nomeCliente, $cpfCliente,$telCliente,$dataNasCliente)){
 echo("Cliente alterado com SUCESSO");
 }else{
     echo("Cliente não alterado.");

@@ -2,7 +2,7 @@
 
 include_once("header.php");
 include_once("../models/conexao.php");
-include_once("../models/bancousuarios.php");
+include_once("../models/bancoCliente.php");
 ?>
 <table class="table">
   <thead>
@@ -32,13 +32,13 @@ foreach($clientes as $cliente):
       <td><?=$cliente['datanasCli']?></td>
       <td>
       <form action="../controllers/deletarcliente.php" method="Post">
-      <input type="hidden" name= "codclientedeletar" value="<?=$usuario['codUsu']?>">
+      <input type="hidden" name= "codclientedeletar" value="<?=$cliente['codCli']?>">
        <button type="submit" class="btn btn-danger">Deletar</button>
       </form>
       </td>
       <td>
       <form action="../viws/formalterarusu.php" method="Post">
-      <input type="hidden" name= "codclientealterar" value="<?=$usuario['codUsu']?>">
+      <input type="hidden" name= "codclientealterar" value="<?=$cliente['codCli']?>">
        <button type="submit" class="btn btn-success">Alterar</button>
       </form>
       </td>

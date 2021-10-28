@@ -1,7 +1,7 @@
 <?php
-function inserirCliente($conexao,$codigoUsuFk,$nomeCliente, $cpfCliente,$foneCliente,$dataNascCliente){
+function inserirCliente($conexao,$codigoUsuFk,$nomeCliente,$cpfCliente,$telCliente,$datanasCliente){
    
-    $query="insert into tbclientes( codUsuFK,nomeCli,cpfCli,foneCli,datanasCli)values('{$codigoUsuFk}','{$nomeCliente}','{$cpfCliente}''{$foneCliente}','{$dataNascCliente}')";
+    $query="insert into tbclientes(codUsuFK,nomeCli,cpfCli,foneCli,datanasCli)values('{$codigoUsuFk}','{$nomeCliente}','{$cpfCliente}','{$telCliente}','{$datanasCliente}')";
     
     $resultados = mysqli_query($conexao,$query);
     return $resultados;
